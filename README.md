@@ -2,7 +2,7 @@
 
  - [x] Projeto Funcional
  - [ ] Validações no fomulário
- - [ ] Desenvolver parte estática
+ - [ ] Desenvolver parte estética
  - [ ] Transformar em API
  - [ ] Adicionar animação
 
