@@ -6,7 +6,8 @@ class Form extends Component{
         super(props)
 
         this.state = {
-            "binNumber" : ''
+            "binNumber" : '',
+            "decNumber" : ''
         };
 
         this.changeForm = this.changeForm.bind(this);
@@ -26,7 +27,12 @@ class Form extends Component{
         event.preventDefault();
        
         const convert = new Converter();
-        convert.convert(this.state.binNumber)
+        let numberBin = convert.handleZeros(this.state.binNumber)
+        let numberDec = convert.convert(numberBin);
+
+        this.setState({
+            "decNumber" : numberDec
+        })
     }
 
     render(){
@@ -38,8 +44,11 @@ class Form extends Component{
                     <input type="text" name="binNumber" value={state.binNumber} onChange={this.changeForm} />
                     <button onClick={this.doConvert}> Converter </button>
                 </form>
+
+                {state.decNumber}
+                
             </div>
-        );
+        );  
     }
 }
 
