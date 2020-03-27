@@ -4,8 +4,8 @@
  - [ ] Validações no fomulário
  - [ ] Desenvolver parte estática
  - [ ] Transformar em API
- - [ ] Adiconar animação
- 
+ - [ ] Adicionar animação
+
 ```
  Para ver o projeto:
   1 - Clone
